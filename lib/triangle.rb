@@ -26,6 +26,11 @@ class Triangle
       triangle << false if side <= 0
       raise TriangleError if triangle.include?(false)
     end
+    [a, b, c].any? do |side|
+      if side <= 0
+        raise TriangleError
+      end
+    end
   end
 
   class TriangleError < StandardError
