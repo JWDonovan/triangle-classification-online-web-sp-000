@@ -3,7 +3,7 @@ class Triangle
   def initialize(a, b, c)
     @a = a
     @b = b
-    @b = c
+    @c = c
   end
 
   def kind
