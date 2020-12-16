@@ -19,6 +19,10 @@ class Triangle
     end
   end
 
+  def valid?
+    triangle = [(a + b > c), (a + c > b), (b + c > a)]
+  end
+
   class TriangleError < StandardError
   end
 end
