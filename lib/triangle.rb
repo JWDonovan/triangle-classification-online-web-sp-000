@@ -9,9 +9,12 @@ class Triangle
   def kind
     if a == b && b == c
       :equilateral
+    else
+      :scalene
     end
   end
 
   class TriangleError < StandardError
   end
 end
+ 
