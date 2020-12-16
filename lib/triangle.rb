@@ -19,7 +19,7 @@ class Triangle
     end
   end
 
-  def validate_triangle
+  def valid?
     triangle = [(a + b > c), (a + c > b), (b + c > a)]
 
     [a, b, c].each do |side|
